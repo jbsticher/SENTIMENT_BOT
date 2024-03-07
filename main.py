@@ -8,7 +8,7 @@ class Mood:
 
 def get_mood(input_text: str, *, sensitivity: float) -> Mood:
     polarity: float = TextBlob(input_text).sentiment.polarity
-    """must pass in name of 'sensitivy when calling function because of *(asterik)"""
+    """must pass in name of 'sensitivy when calling function because of *(asterisk)"""
     friendly_threshold: float = sensitivity
     hostile_threshold: float = sensitivity
 
